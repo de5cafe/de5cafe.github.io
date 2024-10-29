@@ -1,23 +1,25 @@
 @font-face {
-        font-family: 'Inconsolata';
-        src: url('/assets/Inconsolata.ttf') format('truetype');
-    }
-
+    font-family: 'Inconsolata';
+    src: url('/assets/Inconsolata.ttf') format('truetype');
+}
 
 h1 {
+    font-family: 'Inconsolata', monospace; /* Apply the font */
     color: black;
     text-align: center;
     margin-bottom: 70px;
 }
 
 p {
-     color: black;
-     margin-bottom: 20px;
-        display:block;
+    font-family: 'Inconsolata', monospace; /* Apply the font */
+    color: black;
+    margin-bottom: 20px;
+    display: block;
 }
 
 button {
     display: block;
+    font-family: 'Inconsolata', monospace; /* Apply the font */
     background-color: white;
     color: black;
     border: 2px solid #555555;
@@ -26,7 +28,6 @@ button {
     font-size: 20px;
     margin-bottom: 10px;
     margin-right: 5px;
-    
 }
 
 img#enemy {

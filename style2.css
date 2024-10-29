@@ -5,7 +5,6 @@
 
 
 h1 {
-    font-family: Consolas;
     color: black;
     text-align: center;
     margin-bottom: 70px;
@@ -13,7 +12,6 @@ h1 {
 
 button {
     display: block;
-    font-family: Consolas;
     background-color: white;
     color: black;
     border: 2px solid #555555;

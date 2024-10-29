@@ -18,3 +18,7 @@ button {
     margin-bottom: 20px;
     
 }
+
+enemy {
+    transform: scaleX(-1);
+}

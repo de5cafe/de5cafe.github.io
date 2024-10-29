@@ -21,5 +21,4 @@ button {
 
 img#enemy {
     transform: scaleX(-1);
-    display: inline-block;
 }

@@ -1,6 +1,6 @@
 @font-face {
-        font-family: 'Consolas';
-         src: local('Consolas');
+        font-family: 'Inconsolata';
+        src: url('/assets/Inconsolata.ttf') format('truetype');
     }
 
 

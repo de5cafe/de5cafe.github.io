@@ -19,6 +19,6 @@ button {
     
 }
 
-enemy {
+#enemy {
     transform: scaleX(-1);
 }

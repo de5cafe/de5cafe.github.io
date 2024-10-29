@@ -10,9 +10,10 @@ h1 {
     margin-bottom: 70px;
 }
 
-p{
-        color:black;
-        margin-bottom: 20px;
+p {
+     color: black;
+     margin-bottom: 20px;
+        display:block;
 }
 
 button {

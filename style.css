@@ -19,6 +19,6 @@ button {
     
 }
 
-#enemy {
+img#enemy {
     transform: scaleX(-1);
 }

@@ -6,7 +6,7 @@
 h1 {
     font-family: 'Inconsolata', monospace; /* Apply the font */
     color: black;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -38,7 +38,7 @@ body {
     justify-content: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
-    background-color: teal;
+    background-color: cyan;
 }
 
 #question {

@@ -1,2 +1,2 @@
 # gglobe
-jogo de geografia educacional 
+jogo educacional sobre geografia

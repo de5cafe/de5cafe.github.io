@@ -38,7 +38,7 @@ body {
     justify-content: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
-    background-image: "/assets/bg.png";
+    background-image: url("/assets/bg.png");
 }
 
 #question {

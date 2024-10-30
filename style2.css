@@ -40,6 +40,8 @@ body {
     margin: 0; /* Remove default margin */
     background-image: url("/assets/bg1.png");
     background-position: center calc(50% - 200px);
+    background-color: #146a30;
+    background-repeat: no-repeat;
 }
 
 #question {

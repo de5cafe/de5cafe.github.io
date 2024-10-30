@@ -1,4 +1,67 @@
-const strings = [
+const relevo1 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const relevo2 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const agente1 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const agente2 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const fuso1 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const fuso2 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const carto1 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const carto2 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const cardeal1 = [
+  "hello this is a test input",
+  "hey whats up",
+  "another string",
+  "yet another string"
+];
+
+const cardeal2 = [
   "hello this is a test input",
   "hey whats up",
   "another string",

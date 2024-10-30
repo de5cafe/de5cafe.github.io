@@ -7,8 +7,6 @@ h1 {
     font-family: 'Inconsolata', monospace; /* Apply the font */
     color: black;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
-    padding: 10px; /* Optional: add some padding around the buttons */
 }
 
 p {
@@ -49,6 +47,11 @@ body {
 
 #question {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 10px; /* Optional: add some padding around the buttons */
+    margin: -20px;
+    z-index: 1;
+    color: white;
 }
 
 img#enemy {

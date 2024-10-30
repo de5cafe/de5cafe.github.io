@@ -31,6 +31,15 @@ button {
     font-size: 20px;
 }
 
+body {
+    display: flex; /* Use flexbox on the body */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
 #question {
     text-align: center;
 }

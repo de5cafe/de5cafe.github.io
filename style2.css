@@ -38,6 +38,7 @@ body {
     justify-content: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
+    background-color: teal;
 }
 
 #question {

@@ -48,3 +48,16 @@ body {
 img#enemy {
     transform: scaleX(-1);
 }
+
+.battle {
+    display: flex; /* Use flexbox for images */
+    justify-content: center; /* Center images horizontally */
+}
+
+img {
+    margin-top: 5px; /* Space between buttons and images */
+}
+
+img#player {
+    margin-right: 20px; /* Add space to the right of the player image */
+}

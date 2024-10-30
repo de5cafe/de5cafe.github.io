@@ -38,7 +38,7 @@ body {
     justify-content: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
-    background-color: cyan;
+    background-image: "/assets/bg.png";
 }
 
 #question {
@@ -52,6 +52,7 @@ img#enemy {
 .battle {
     display: flex; /* Use flexbox for images */
     justify-content: center; /* Center images horizontally */
+    margin-bottom: 30px;
 }
 
 img {

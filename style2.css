@@ -19,7 +19,6 @@ p {
 .button-container {
     display: flex; /* Use flexbox */
     gap: 5px; /* Optional: adds space between buttons */
-    
 }
 
 button {
@@ -30,7 +29,7 @@ button {
     padding: 10px 20px; /* Add some extra space around the text */
     display: inline-block; /* Make the button automatically fit the width of the text */
     box-sizing: border-box; /* Include padding and border in the width and height */
-    font-size: clamp(10px, 2.5vw, 20px);
+    font-size: calc(1.5em - 0.05em * (100vw - 200px) / 200px);
 }
 
 body {

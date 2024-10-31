@@ -26,10 +26,12 @@ button {
     background-color: black;
     color: white;
     border: 2px solid #ffffff;
-    padding: 10px 20px; /* Add some extra space around the text */
+    padding: calc(0.5em - 0.05em * (100vw - 200px) / 200px) calc(1em - 0.1em * (100vw - 200px) / 200px);
     display: inline-block; /* Make the button automatically fit the width of the text */
     box-sizing: border-box; /* Include padding and border in the width and height */
     font-size: calc(1.5em - 0.05em * (100vw - 200px) / 200px);
+    width: calc(10em - 0.5em * (100vw - 200px) / 200px);
+    max-width: 200px;
 }
 
 body {

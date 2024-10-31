@@ -29,11 +29,11 @@ button {
     padding: 10px 20px; /* Add some extra space around the text */
     display: inline-block; /* Make the button automatically fit the width of the text */
     box-sizing: border-box; /* Include padding and border in the width and height */
-    --font-size: calc(1.5em - 0.05em * (100vw - 200px) / 200px);
-    font-size: var(--font-size);
     min-width: 100px; /* Set a minimum width for the button */
-    max-width: 300px; /* Set a maximum width for the button */
     width: fit-content; /* Make the button's width adjust to fit the content */
+    max-width: 80vw; /* Set a maximum width for the button */
+    --font-size: calc(1.5em - 0.05em * (100vw - 200px) / 200px); /* Store font size in a CSS variable */
+    font-size: var(--font-size); /* Use the CSS variable to set the font size */
 }
 
 button.long-string {

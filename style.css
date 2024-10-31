@@ -24,6 +24,10 @@ button {
     
 }
 
+button:hover {
+    background-color: #808080; /* Change the background color to grey on hover */
+}
+
 img#enemy {
     transform: scaleX(-1);
 }

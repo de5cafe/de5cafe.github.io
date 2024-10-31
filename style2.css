@@ -36,6 +36,10 @@ button {
     font-size: var(--font-size); /* Use the CSS variable to set the font size */
 }
 
+button:hover {
+    background-color: #808080; /* Change the background color to grey on hover */
+}
+
 button.long-string {
     --font-size: calc(1em - 0.05em * (100vw - 200px) / 200px);
 }

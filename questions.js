@@ -36,7 +36,6 @@ const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
 document.getElementById("question").innerHTML = randomQuestion.question;
 
 // Set the random answers in the HTML elements
-const buttons = document.querySelectorAll(".button-container button");
-buttons.forEach((button, index) => {
-  button.innerHTML = randomQuestion.answers[index];
-});
+for (let i = 1; i <= 4; i++) {
+  document.getElementById("btn" + i).innerHTML = randomQuestion.answers[i - 1];
+}

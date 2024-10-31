@@ -68,15 +68,14 @@ const cardeal2 = [
   "yet another string"
 ];
 
-// Get the element with the id "question"
-const questionElement = document.getElementById("question");
+// Create an array of all the arrays
+const allArrays = [relevo1, relevo2, agente1, agente2, fuso1, fuso2, carto1, carto2, cardeal1, cardeal2];
 
-// Function to select a random string and update the element
-function selectRandomString() {
-  const randomIndex = Math.floor(Math.random() * strings.length);
-  const randomString = strings[randomIndex];
-  questionElement.textContent = randomString;
-}
+// Select a random array
+const randomArray = allArrays[Math.floor(Math.random() * allArrays.length)];
 
-// Call the function to select a random string
-selectRandomString();
+// Select a random string from the random array
+const randomString = randomArray[Math.floor(Math.random() * randomArray.length)];
+
+// Set the random string in the HTML element
+document.getElementById("question").innerHTML = randomString;

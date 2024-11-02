@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('/assets/minecraftia.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Minecraftia', monospace; /* Apply the font */
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Minecraftia', monospace; /* Apply the font */
+    color: black;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.button-container {
+    display: flex; /* Use flexbox */
+    gap: 5px; /* Optional: adds space between buttons */
+}
+
+button {
+    font-family: 'Minecraftia', monospace; /* Apply the font */
+    background-color: black;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 10px 20px; /* Add some extra space around the text */
+    display: inline-block; /* Make the button automatically fit the width of the text */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+    width: fit-content; /* Make the button's width adjust to fit the content */
+}
+
+button:hover {
+    background-color: #808080; /* Change the background color to grey on hover */
+}
+
+body {
+    display: flex; /* Use flexbox on the body */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-image: url("/assets/bg1.png");
+    background-position: center calc(50% - 200px);
+    background-color: #146a30;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+#question {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 10px; /* Optional: add some padding around the buttons */
+    margin: 0; /* Remove negative margin */
+    z-index: 1;
+    color: white;
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+img#enemy {
+    transform: scaleX(-1);
+}
+
+.battle {
+    display: flex; /* Use flexbox for images */
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 30px;
+}
+
+img {
+    margin-top: 5px; /* Space between buttons and images */
+}
+
+img#player {
+    margin-right: 50px; /* gap between player e enemy */
+}

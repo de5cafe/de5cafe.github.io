@@ -51,6 +51,7 @@ body {
 }
 
 #question {
+    font-family: 'Minecraftia', monospace;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
     padding: 10px; /* Optional: add some padding around the buttons */

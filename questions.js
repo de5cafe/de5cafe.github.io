@@ -34,7 +34,7 @@ const questions = [
       "c",
       "d"
     ]
-  },
+  }
   // Add more questions and answers here...
 ];
 

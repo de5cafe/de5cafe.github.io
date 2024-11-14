@@ -26,6 +26,14 @@ const questions = [
       "o relevo desde o surgimento da Terra não sofreu modificações em sua estrutura."
     ]
   },
+  question: "questão teste",
+    answers: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
   // Add more questions and answers here...
 ];
 

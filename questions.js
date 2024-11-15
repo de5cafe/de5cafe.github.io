@@ -12,7 +12,7 @@ const questions = [
     question: "marvel",
     answers: [
       "capitao america.",
-      "homem arnaha odfnefipn43ioffpfref.",
+      "homem aranha odfnefipn43ioffpfref.",
       "hulk",
       "japão"
     ]
@@ -27,7 +27,7 @@ const questions = [
     ]
   },
   {
-  question: "questão teste",
+    question: "questão teste",
     answers: [
       "a",
       "b",
@@ -45,6 +45,12 @@ const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
 document.getElementById("question").innerHTML = randomQuestion.question;
 
 // Set the random answers in the HTML elements
-for (let i = 1; i <= 5; i++) {
-  document.getElementById("btn" + i).innerHTML = randomQuestion.answers[i - 1];
-}
+const answerButtons = document.querySelectorAll("[id^='btn']"); // Select all buttons with IDs starting with 'btn'
+answerButtons.forEach((button, index) => {
+  if (index < randomQuestion.answers.length) {
+    button.innerHTML = randomQuestion.answers[index];
+    button.style.display = "block"; // Show the button if there's an answer
+  } else {
+    button.style.display = "none"; // Hide the button if there's no answer
+  }
+});

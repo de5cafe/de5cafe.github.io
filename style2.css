@@ -99,11 +99,11 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-    background-color: red; /* Color of the filled portion */
+    background-color: #9a0404; /* Color of the filled portion */
 }
 
 progress::-moz-progress-bar {
-    background-color: red; /* Color of the filled portion for Firefox */
+    background-color: #9a0404; /* Color of the filled portion for Firefox */
 }
 
 

@@ -119,7 +119,7 @@ const questions = [
   {
     question: "14. O que é o Meridiano de Greenwich?",
     answers: [
-      "a) É uma linha que indica o horário de verão no mundo."
+      "a) É uma linha que indica o horário de verão no mundo.",
       "b) É uma linha que divide o hemisfério norte do hemisfério sul.",
       "c) É a linha que determina a longitude de todos os países.",
       "d) É a linha imaginária que divide os fusos horários no mundo.", // resposta correta

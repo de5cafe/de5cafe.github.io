@@ -89,9 +89,9 @@ img#enemy {
 
 progress {
     width: 100%; /* Set width to 100% of the container */
-    height: 20px; /* Set a specific height for better visibility */
+    height: 25px; /* Set a specific height for better visibility */
     background-color: #180f0f; /* Background color for the progress bar */
-    border: 10px solid black; /* Optional: add a border for visibility */
+    border: 5px solid black; /* Optional: add a border for visibility */
 }
 
 progress::-webkit-progress-bar {

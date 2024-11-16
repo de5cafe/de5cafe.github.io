@@ -88,7 +88,7 @@ img#enemy {
 }
 
 progress {
-    width: 250px; /* Set a fixed width for the progress bar */
+    width: 100%; /* Set width to 100% of the container */
     height: 20px; /* Set a specific height for better visibility */
     background-color: #ccc; /* Background color for the progress bar */
     border: 1px solid red; /* Optional: add a border for visibility */
@@ -107,8 +107,10 @@ progress::-moz-progress-bar {
     background-color: #4caf50; /* Color of the filled portion for Firefox */
 }
 
+
 img {
     margin-top: 5px; /* Space between buttons and images */
+    margin-bottom: 10px;
 }
 
 img#player {

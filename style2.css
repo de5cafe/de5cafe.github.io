@@ -73,6 +73,20 @@ img#enemy {
     transform: scaleX(-1);
 }
 
+.battle {
+    display: flex; /* Use flexbox for images */
+    justify-content: center; /* Center images horizontally */
+    margin-bottom: 30px;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column; /* Stack image and progress bar vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 25px; /* Optional: add some space between characters */
+    width: 250px; /* Set a fixed width for the character container */
+}
+
 progress {
     appearance: none; /* Remove default styling */
     width: 100%; /* Set width to 100% of the container */

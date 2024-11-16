@@ -34,7 +34,26 @@ const questions = [
       "c",
       "d"
     ]
+  },
+  {
+    question: "SOU UMA PERGUNTA",
+    answers: [
+      "sou uma resposta",
+      "sou a vela que acende",
+      "sou a vela que apaga",
+      "sou a beira do absimo"
+    ]
+  },
+  {
+    question: "Eu prefiro ser?",
+    answers: [
+      "Essa metamorfose ambulante",
+      "A dona de casa, nos pegue pagues do mundo",
+      "Maluco beleza",
+      "Um sujeito chato que não acha nada engraçado"
+    ]
   }
+  
   // Add more questions and answers here...
 ];
 

@@ -79,6 +79,19 @@ img#enemy {
     margin-bottom: 30px;
 }
 
+.character-container {
+    display: flex;
+    flex-direction: column; /* Stack image and progress bar vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 25px; /* Optional: add some space between characters */
+}
+
+progress {
+    width: 100%; /* Make progress bars take full width of the container */
+    margin-top: 10px; /* Space between image and progress bar */
+}
+
+
 img {
     margin-top: 5px; /* Space between buttons and images */
 }
@@ -86,3 +99,4 @@ img {
 img#player {
     margin-right: 50px; /* gap between player e enemy */
 }
+

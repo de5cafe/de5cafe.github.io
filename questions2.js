@@ -430,7 +430,13 @@ function displayQuestion() {
 
 const playerImage = document.getElementById('player');
 const enemyImage = document.getElementById('enemy');
-const attackDuration = 630; 
+const attackDuration = 700; 
+
+function sfx() {
+    const audio = new Audio('/assets/hit.mp3'); // Path to the sound file
+    audio.play().catch(error => {
+        console.error('Error playing sound:', error);
+    });
 
 function playerattack() {
     // Change to the attack GIF
@@ -461,9 +467,11 @@ function checkAnswer(selectedIndex, correctIndex) {
         points += 1;
         ehealth -= 6; // Diminui a vida do inimigo
         playerattack();
+        hit();
     } else {
         phealth -= 10; // Diminui a vida do jogador
         enemyattack();
+        hit();
     }
 
     updateScores();

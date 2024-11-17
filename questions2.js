@@ -58,9 +58,9 @@ function checkAnswer(selectedIndex, correctIndex) {
     updateScores();
 
     if (ehealth <= 0) {
-        endGame("Você venceu!");
+        endGame("VOCÊ VENCEU!");
     } else if (phealth <= 0) {
-        endGame("Você foi derrotado!");
+        endGame("DERROTA!");
     } else {
         displayQuestion(); // Mostrar uma nova pergunta
     }

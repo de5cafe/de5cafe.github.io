@@ -514,9 +514,10 @@ document.getElementById("tryAgain").onclick = () => {
 // Iniciar o jogo
 displayQuestion();
 
+    var audio = new Audio('/assets/zin2.mp3'); 
+
 // Reproduzir áudio ao carregar a página
 window.onload = function() {
-    var audio = new Audio('/assets/zin2.mp3'); 
     audio.play().catch(function(error) {
         console.log('Playback failed:', error);
     });

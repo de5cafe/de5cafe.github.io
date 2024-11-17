@@ -439,6 +439,7 @@ function sfx() {
     });
 }
 function playerattack() {
+  if (ehealth > 0 && phealth > 0){
     // Change to the attack GIF
     playerImage.src = '/assets/playerattacknew.gif'; // Replace with the path to your attack GIF
     enemyImage.src = '/assets/enemyhit.png';
@@ -448,9 +449,11 @@ function playerattack() {
         playerImage.src = '/assets/playeridle.gif'; // Replace with the path to your idle GIF
         enemyImage.src = '/assets/enemyidle.gif';
     }, attackDuration);
+  }
 }
 
 function enemyattack() {
+  if (ehealth > 0 && phealth > 0){
     // Change to the attack GIF
     enemyImage.src = '/assets/enemyattack.gif'; // Replace with the path to your attack GIF
     playerImage.src = '/assets/playerhit.png';
@@ -460,6 +463,7 @@ function enemyattack() {
         playerImage.src = '/assets/playeridle.gif'; // Replace with the path to your idle GIF
         enemyImage.src = '/assets/enemyidle.gif';
     }, attackDuration);
+  }
 }
 
 function checkAnswer(selectedIndex, correctIndex) {

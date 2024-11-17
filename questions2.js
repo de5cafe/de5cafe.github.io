@@ -79,14 +79,7 @@ function endGame(message) {
 }
 
 document.getElementById("tryAgain").onclick = () => {
-    points = 0;
-    ehealth = 100;
-    phealth = 100;
-    updateScores();
-    document.getElementById("result").style.display = "none";
-    document.querySelector(".button-container").style.display = "block";
-    document.getElementById("question").style.display = "block";
-    displayQuestion();
+    location.reload()
 };
 
 // Iniciar o jogo

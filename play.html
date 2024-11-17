@@ -26,12 +26,12 @@
 </div>
 <audio id="myAudio" src="/assets/zin2.mp3"></audio>
 
-    <script>
-        document.getElementById('btn1').addEventListener('click', function() {
-            var audio = document.getElementById('myAudio');
+<script>
+        window.onload = function() {
+            var audio = new Audio('/assets/zin2.mp3'); // Replace with the path to your audio file
             audio.play().catch(function(error) {
-                console.log('Erro ao reproduzir:', error);
+                console.log('Playback failed:', error);
             });
-        });
+        };
     </script>
 </body>

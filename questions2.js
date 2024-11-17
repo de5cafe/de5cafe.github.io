@@ -428,12 +428,59 @@ function displayQuestion() {
     });
 }
 
+const playerImage = document.getElementById('player');
+const attackDuration = 1000; 
+
+function playerattack() {
+    // Change to the attack GIF
+    playerImage.src = '/assets/playerattacknew.gif'; // Replace with the path to your attack GIF
+
+    // Set a timeout to switch back to the idle GIF after the attack duration
+    setTimeout(() => {
+        playerImage.src = '/assets/playeridle.gif'; // Replace with the path to your idle GIF
+    }, attackDuration);
+}
+
+function enemyattack() {
+    // Change to the attack GIF
+    playerImage.src = '/assets/enemyattack.gif'; // Replace with the path to your attack GIF
+
+    // Set a timeout to switch back to the idle GIF after the attack duration
+    setTimeout(() => {
+        playerImage.src = '/assets/enemyidle.gif'; // Replace with the path to your idle GIF
+    }, attackDuration);
+}
+
+function playerhurt() {
+    // Change to the attack GIF
+    playerImage.src = '/assets/playerhurt.png'; // Replace with the path to your attack GIF
+
+    // Set a timeout to switch back to the idle GIF after the attack duration
+    setTimeout(() => {
+        playerImage.src = '/assets/playeridle.gif'; // Replace with the path to your idle GIF
+    }, attackDuration);
+}
+
+function enemyhurt() {
+    // Change to the attack GIF
+    playerImage.src = '/assets/enemyhurt.png'; // Replace with the path to your attack GIF
+
+    // Set a timeout to switch back to the idle GIF after the attack duration
+    setTimeout(() => {
+        playerImage.src = '/assets/enemyidle.gif'; // Replace with the path to your idle GIF
+    }, attackDuration);
+}
+
 function checkAnswer(selectedIndex, correctIndex) {
     if (selectedIndex === correctIndex) {
         points += 1;
         ehealth -= 6; // Diminui a vida do inimigo
+        playerattack();
+        enemyhurt();
     } else {
         phealth -= 10; // Diminui a vida do jogador
+        enemyattack();
+        playerhurt();
     }
 
     updateScores();

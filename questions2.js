@@ -430,7 +430,7 @@ function displayQuestion() {
 
 const playerImage = document.getElementById('player');
 const enemyImage = document.getElementById('enemy');
-const attackDuration = 500; 
+const attackDuration = 630; 
 
 function playerattack() {
     // Change to the attack GIF

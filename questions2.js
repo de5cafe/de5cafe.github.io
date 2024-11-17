@@ -405,6 +405,8 @@ const questions = [
 }
 ];
 
+//DAQUI PRA BAIXO, FUNCIONALIDADE DO JOGO EM SI
+
 function getRandomQuestion() {
     const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
     return randomQuestion;

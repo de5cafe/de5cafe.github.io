@@ -75,6 +75,7 @@ function endGame(message) {
     document.getElementById("result").style.display = "block";
     document.getElementById("resultMessage").innerText = message;
     document.querySelector(".button-container").style.display = "none"; // Ocultar botões de resposta
+   document.getElementById("question").style.display = "none";
 }
 
 document.getElementById("tryAgain").onclick = () => {
@@ -83,7 +84,8 @@ document.getElementById("tryAgain").onclick = () => {
     phealth = 100;
     updateScores();
     document.getElementById("result").style.display = "none";
-    document.querySelector(".button-container").style.display = "block"; // Mostrar botões de resposta
+    document.querySelector(".button-container").style.display = "block";
+    document.getElementById("question").style.display = "block";
     displayQuestion();
 };
 

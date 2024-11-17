@@ -1,6 +1,6 @@
 <script>
 
-    const audio = document.getElementById('sound');
+    const audio = document.getElementById('play');
 
     // Get the button element (you can choose any button)
     const ba = document.getElementById('btn1');

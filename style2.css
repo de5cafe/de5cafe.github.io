@@ -12,6 +12,7 @@ h1 {
 h2 {
     font-family: 'Minecraftia', monospace; /* Apply the font */
     color: white;
+    text-align: center;
 }
 
 p {

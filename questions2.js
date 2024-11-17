@@ -430,12 +430,12 @@ function displayQuestion() {
 
 const playerImage = document.getElementById('player');
 const enemyImage = document.getElementById('enemy');
-const attackDuration = 1000; 
+const attackDuration = 500; 
 
 function playerattack() {
     // Change to the attack GIF
     playerImage.src = '/assets/playerattacknew.gif'; // Replace with the path to your attack GIF
-    enemyImage.src = '/assets/enemyhurt.png';
+    enemyImage.src = '/assets/enemyhit.png';
 
     // Set a timeout to switch back to the idle GIF after the attack duration
     setTimeout(() => {
@@ -447,12 +447,12 @@ function playerattack() {
 function enemyattack() {
     // Change to the attack GIF
     enemyImage.src = '/assets/enemyattack.gif'; // Replace with the path to your attack GIF
-    playerImage.src = '/assets/playerhurt.png';
+    playerImage.src = '/assets/playerhit.png';
 
     // Set a timeout to switch back to the idle GIF after the attack duration
     setTimeout(() => {
-        playerImage.src = '/assets/enemyidle.gif'; // Replace with the path to your idle GIF
-        enemyImage.src = '/assets/playeridle.gif';
+        playerImage.src = '/assets/playeridle.gif'; // Replace with the path to your idle GIF
+        enemyImage.src = '/assets/enemyidle.gif';
     }, attackDuration);
 }
 

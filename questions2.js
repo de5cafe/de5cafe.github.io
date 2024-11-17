@@ -478,8 +478,14 @@ function checkAnswer(selectedIndex, correctIndex) {
 
     if (ehealth <= 0) {
         endGame("VOCÊ VENCEU!");
+      playerImage.src = '/assets/playerwin.png';
+       playerImage.src = '/assets/enemylose.png';
+      stopaudio();
     } else if (phealth <= 0) {
         endGame("DERROTA!");
+       playerImage.src = '/assets/playerlose.png';
+       playerImage.src = '/assets/enemywin.png';
+      stopaudio();
     } else {
         displayQuestion(); // Mostrar uma nova pergunta
     }
@@ -511,3 +517,10 @@ window.onload = function() {
         console.log('Playback failed:', error);
     });
 };
+
+function stopaudio() {
+    if (audio) {
+        audio.pause(); // Pause the audio
+        audio.currentTime = 0; // Reset playback position to the start
+    }
+}

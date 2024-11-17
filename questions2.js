@@ -1,4 +1,4 @@
-    const questions = [
+const questions = [
   {
     question: "1. O que é relevo?",
     answers: [

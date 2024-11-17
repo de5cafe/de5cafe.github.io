@@ -467,11 +467,11 @@ function checkAnswer(selectedIndex, correctIndex) {
         points += 1;
         ehealth -= 6; // Diminui a vida do inimigo
         playerattack();
-        hit();
+        sfx();
     } else {
         phealth -= 10; // Diminui a vida do jogador
         enemyattack();
-        hit();
+        sfx();
     }
 
     updateScores();

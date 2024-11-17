@@ -437,7 +437,7 @@ function sfx() {
     audio.play().catch(error => {
         console.error('Error playing sound:', error);
     });
-
+}
 function playerattack() {
     // Change to the attack GIF
     playerImage.src = '/assets/playerattacknew.gif'; // Replace with the path to your attack GIF

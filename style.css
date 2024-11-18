@@ -1,10 +1,10 @@
 @font-face {
-        font-family: 'Inconsolata';
-        src: url('/assets/Inconsolata.ttf') format('truetype');
-    }
+    font-family: 'Minecraftia';
+    src: url('/assets/minecraftia.ttf') format('truetype');
+}
 
 h1 {
-    font-family: Consolas;
+    font-family: 'Minecraftia';
     color: black;
     text-align: center;
     margin-bottom: 70px;
@@ -13,7 +13,7 @@ h1 {
 button {
     display: block;
     margin: 0 auto;
-    font-family: Consolas;
+    font-family: 'Minecraftia';
     background-color: white;
     color: black;
     border: 2px solid #555555;

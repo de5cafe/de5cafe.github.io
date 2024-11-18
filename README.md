@@ -1,2 +1,2 @@
-# gglobe
-jogo educacional sobre geografia et al.
+# geopixel
+jogo educacional sobre geografia, em pixelart

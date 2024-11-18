@@ -9,7 +9,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-resultmsg {
+resultMessage {
     font-family: 'Minecraftia', monospace; /* Apply the font */
     color: white;
     text-align: center;

@@ -494,14 +494,14 @@ function checkAnswer(selectedIndex, correctIndex) {
     updateScores();
 
     if (ehealth <= 0) {
-        endGame(`PARABÉNS!\nSua pontuação: ${points}/17`);
+        endGame(`PARABÉNS!\nSua pontuação: ${points}/18`);
       playerImage.src = '/assets/playerwin.png';
        enemyImage.src = '/assets/enemylose.png';
       document.body.style.backgroundImage = "url('/assets/win.jpg')";
       victory();
       stopaudio();
     } else if (phealth <= 0) {
-        endGame(`GAME OVER!\nSua pontuação: ${points}/17`);
+        endGame(`GAME OVER!\nSua pontuação: ${points}/18`);
        playerImage.src = '/assets/playerlose.png';
        enemyImage.src = '/assets/enemywin.png';
       document.body.style.backgroundImage = "url('/assets/lose.png')";

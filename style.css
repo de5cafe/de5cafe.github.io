@@ -8,12 +8,21 @@
     src: url('/assets/Inconsolata.ttf') format('truetype');
 }
 
+body {
+    background-image:"url('/assets/win.jpg')";
+}
+
 h1 {
     font-family: 'Minecraftia';
-    color: black;
+    color: cyan;
     text-align: center;
     margin-bottom: 70px;
     font-size:80px;
+     text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.5), /* First shadow */
+        2px 2px 0px rgba(0, 0, 0, 0.4), /* Second shadow */
+        3px 3px 0px rgba(0, 0, 0, 0.3); /* Third shadow */
+}
 }
 
 button {

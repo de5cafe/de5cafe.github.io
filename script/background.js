@@ -1,8 +1,8 @@
   const bgs = [
-        '/assets/bg1.jpg', // Replace with your actual image paths
-        '/assets/bg2.jpg',
-        '/assets/bg3.jpg',
-        '/assets/bg4.jpg'
+        '/assets/bg1.png', // Replace with your actual image paths
+        '/assets/bg2.png',
+        '/assets/bg3.png',
+        '/assets/bg4.png'
     ];
 
  const aleatorio = Math.floor(Math.random() * bgs.length);

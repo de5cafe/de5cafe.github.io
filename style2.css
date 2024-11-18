@@ -9,10 +9,17 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
+resultmsg {
     font-family: 'Minecraftia', monospace; /* Apply the font */
     color: white;
     text-align: center;
+}
+
+points {
+    font-family: 'Minecraftia', monospace;
+    color: yellow;
+    text-align: right;
+
 }
 
 p {

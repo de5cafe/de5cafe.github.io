@@ -438,6 +438,18 @@ function sfx() {
         console.error('Error playing sound:', error);
     });
 }
+function victory() {
+    const audio = new Audio('/assets/victory.mp3'); // Path to the sound file
+    audio.play().catch(error => {
+        console.error('Error playing sound:', error);
+    });
+}
+function defeat() {
+    const audio = new Audio('/assets/defat.mp3'); // Path to the sound file
+    audio.play().catch(error => {
+        console.error('Error playing sound:', error);
+    });
+}
 function playerattack() {
   if (ehealth > 0 && phealth > 0){
     // Change to the attack GIF
@@ -485,12 +497,14 @@ function checkAnswer(selectedIndex, correctIndex) {
       playerImage.src = '/assets/playerwin.png';
        enemyImage.src = '/assets/enemylose.png';
       document.body.style.backgroundImage = "url('/assets/win.jpg')";
+      victory();
       stopaudio();
     } else if (phealth <= 0) {
         endGame("DERROTA!");
        playerImage.src = '/assets/playerlose.png';
        enemyImage.src = '/assets/enemywin.png';
       document.body.style.backgroundImage = "url('/assets/lose.png')";
+      defeat();
       stopaudio();
     } else {
         displayQuestion(); // Mostrar uma nova pergunta

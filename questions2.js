@@ -482,6 +482,7 @@ function checkAnswer(selectedIndex, correctIndex) {
     if (selectedIndex === correctIndex) {
         points += 1;
         ehealth -= 6; // Diminui a vida do inimigo
+        document.getElementById('points').innerText = `${points}`;
         playerattack();
         sfx();
     } else {

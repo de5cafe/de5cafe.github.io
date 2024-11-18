@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image:"url('/assets/win.jpg')";
+    background-image:url('/assets/win.jpg');
 }
 
 h1 {

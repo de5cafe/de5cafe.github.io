@@ -494,14 +494,14 @@ function checkAnswer(selectedIndex, correctIndex) {
     updateScores();
 
     if (ehealth <= 0) {
-        endGame("VOCÊ VENCEU!");
+        endGame("Parabéns!");
       playerImage.src = '/assets/playerwin.png';
        enemyImage.src = '/assets/enemylose.png';
       document.body.style.backgroundImage = "url('/assets/win.jpg')";
       victory();
       stopaudio();
     } else if (phealth <= 0) {
-        endGame("DERROTA!");
+        endGame(`GAME OVER!\nSua pontuação: ${points}`);
        playerImage.src = '/assets/playerlose.png';
        enemyImage.src = '/assets/enemywin.png';
       document.body.style.backgroundImage = "url('/assets/lose.png')";
@@ -522,6 +522,7 @@ function endGame(message) {
     document.getElementById("resultMessage").innerText = message;
     document.querySelector(".button-container").style.display = "none"; // Ocultar botões de resposta
    document.getElementById("question").style.display = "none";
+  document.getElementbyId("points").style.display = "none";
 }
 
 document.getElementById("tryAgain").onclick = () => {

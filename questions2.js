@@ -439,7 +439,7 @@ function sfx() {
     });
 }
 function victory() {
-    const audio = new Audio('/assets/victory.mp3'); // Path to the sound file
+    const audio = new Audio('/assets/victory2.mp3'); // Path to the sound file
     audio.play().catch(error => {
         console.error('Error playing sound:', error);
     });

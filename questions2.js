@@ -484,11 +484,13 @@ function checkAnswer(selectedIndex, correctIndex) {
         endGame("VOCÊ VENCEU!");
       playerImage.src = '/assets/playerwin.png';
        enemyImage.src = '/assets/enemylose.png';
+      document.body.style.backgroundImage = "url('/assets/win.jpg')";
       stopaudio();
     } else if (phealth <= 0) {
         endGame("DERROTA!");
        playerImage.src = '/assets/playerlose.png';
        enemyImage.src = '/assets/enemywin.png';
+      document.body.style.backgroundImage = "url('/assets/lose.png')";
       stopaudio();
     } else {
         displayQuestion(); // Mostrar uma nova pergunta
